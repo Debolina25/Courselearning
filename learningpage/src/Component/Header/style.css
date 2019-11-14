@@ -1,0 +1,19 @@
+.TextColor {
+    color: white;
+    font-family: Cambria;
+}
+.link {
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+.image {
+    height:100x;
+    width:100px;
+}
+.header_fixed {
+    position: fixed;
+    width: 100%;
+    top:0px;
+}

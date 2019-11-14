@@ -1,0 +1,28 @@
+.page_position {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.link {
+    display:block;
+    text-decoration: none;
+}
+.nav_display {
+    background-color: #ffcce0;
+}
+.scrolling {
+    height:500px;
+    overflow: scroll;
+    position: unset;
+}
+/*Introduction*/
+.intro_example {
+ background-color: rgba(250, 235, 215, 0.863);
+}
+.block_style li{
+    background-color: burlywood; 
+    margin:10px;
+    padding:10px;
+}
+.button {
+    margin:auto 0px;
+}
