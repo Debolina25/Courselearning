@@ -4,7 +4,7 @@ import './style.css';
 import Base from '../../Component/Button';
 let count = 0;
 let check = [];
-//var fs = require('browserify-fs');
+var fs = require('browserify-fs');
 
 export default class Quiz extends Component {
     constructor() {
@@ -31,15 +31,15 @@ export default class Quiz extends Component {
                 count = count+check[item.name]; 
         });
         alert("Total marks you scored out of "+this.props.totalquestions+" questions is: "+count);
-        // let checkitem = this.props.topic+"|"+this.props.totalquestions+"|"+count+"%"
-        // fs.appendFile('./text.txt', checkitem);
-        // count=0;
+        let checkitem = this.props.topic+"|"+this.props.totalquestions+"|"+count+"%"
+        fs.appendFile('./text.txt', checkitem);
+        count=0;
     }
 
     render() {
         return(
             <div>
-                <h1 className="text-center">HTML QUIZ</h1>
+                
                 <ol className="block_style">
                     {this.props.questions.map((item) => 
                         <li>
